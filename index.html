@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A social-media retelling of Jane Austen's Emma.">
+  <title>Highbury — Emma, on the feed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" data-profile="emma">Highbury</button>
+    <label class="search">⌕ <input type="search" placeholder="Search"></label>
+    <nav><button data-home aria-label="Home">⌂</button><button data-messages aria-label="Messages">✈</button><button aria-label="Notifications">♡</button><img id="nav-avatar" src="media/emma/avatar.jpg" alt="Current profile"></nav>
+  </header>
+
+  <aside class="profile-switcher" aria-label="Profiles">
+    <span>VIEW PROFILE</span>
+    <button data-profile="emma"><img src="media/emma/avatar.jpg" alt=""><b>@emma.woodhouse</b><small>THE MATCHMAKER</small></button>
+    <button data-profile="hs"><img src="media/hs/avatar.jpg" alt=""><b>@H.S.</b><small>BEFORE EMMA</small></button>
+    <button data-profile="harriet"><img src="media/harriet/avatar.jpg" alt=""><b>@harriet.smith</b><small>AFTER EMMA</small></button>
+  </aside>
+
+  <main id="app" aria-live="polite"></main>
+
+  <dialog id="post-dialog"><button class="close" aria-label="Close">×</button><div id="post-content"></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
